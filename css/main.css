@@ -1,14 +1,25 @@
 body{
-   color: rgb(227, 213, 164); 
+   color: rgb(227, 213, 164);
+   margin: 0px;
+   background-color: black;
+
 }
-head{
+#head{
     width: 100%;
     background-color: aqua;
+    margin: 0%;
 }
-footer{
+#foot{
     width: 100%;
     background-color: rgb(255, 208, 205);
+    margin: 0%;    
 }
 .main{
     background-color: lightcoral;
+    margin: 1% 5% 1% 5%;
+    border-radius: 15px; 
+}
+h1{
+    margin-left: 5%;
+    font-size: 50px;
 }
