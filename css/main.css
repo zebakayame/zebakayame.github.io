@@ -34,11 +34,12 @@ h1{
 }
 .mainCapt{
     background-color: rgb(124, 197, 234);
-    width: 10%;
-    height: 10%;
+    width: 200px;
+    height: 200px;
     margin: 5%;
     padding: 1%;
     border-radius: 20px;
     text-align: justify;
-    
+    display: inline-block;
+    vertical-align: top;
 }
