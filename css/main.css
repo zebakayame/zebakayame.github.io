@@ -43,3 +43,11 @@ h1{
     display: inline-block;
     vertical-align: top;
 }
+
+.pokeMenu{
+    background-color: rgb(124, 197, 234);
+    margin-top: 5%;
+    float: left;
+    margin-left: 10%;
+    
+}
