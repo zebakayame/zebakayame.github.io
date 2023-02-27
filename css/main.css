@@ -49,5 +49,7 @@ h1{
     margin-top: 5%;
     float: left;
     margin-left: 10%;
-    
+    width: 5%;
+    border-radius: 20px;
+    text-align: center;
 }
