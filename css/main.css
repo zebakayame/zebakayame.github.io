@@ -1,7 +1,7 @@
 body{
    color: rgb(0, 0, 0);
    margin: 0px;
-   background-color: rgb(238, 178, 178);
+   background-color: rgb(228, 178, 178);
 
 }
 #head{
@@ -47,9 +47,7 @@ h1{
 
 .pokeMenu{
     background-color: rgb(124, 197, 234);
-    margin-top: 5%;
     float: left;
-    margin-left: 10%;
     width: 5%;
     border-radius: 20px;
     text-align: center;
