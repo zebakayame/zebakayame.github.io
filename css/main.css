@@ -3,40 +3,35 @@
     src: url(../fonts/Pixellari.ttf);
 }
 body{
-    background-color: #000;
-    margin-top: 6%;
+    background-color:#202441;
+    margin-top: 150px;
 }
 
 .main{
-    background-color: #000000;
-    text-align: center;
-    color: #ebebeb;
-    font-family: bitMapFont;
+    background-color: #202441;
+    
 }
-#foot{
-    background-color: #fff;
-    margin: 1%;
-}
-
 /* Head class */
 #head{
-    background-color: #fff;
+    background-color: #353853;
     position: absolute;
     left: 0px;
     top: 0px;
     width: 100%;
-    display: flex;  
+    display: flex;
 }
 #logoContainer{
-    background-color: aqua;
-    margin: 0.5%;
+    margin: 15px 20px 15px 15px;
+}
+.logo{
+    width: 64px;
 }
 .pokeMenu{
-    background-color: aquamarine;
-    margin: 0.5% 0.5% 0% 0.5%;
+    background-color: #202441;
+    margin: 40px 20px 0px 20px;
+    padding: 10px 10px 0px 10px;
 }
-/* Everything with Text */
-
+/* Everything that goes with Text */
 h1{
     font-size: 80px;
 }
@@ -57,4 +52,40 @@ h6{
 }
 p{
     font-size: 22px;
+}
+.pokeMenu{
+    color: #ebebeb;
+    font-family: bitMapFont;
+    font-size: 22px;
+}
+.main{
+    text-align: center;
+    color: #ebebeb;
+    font-family: bitMapFont;
+}
+@keyframes linkHoofHoof {
+    from{
+        color: #ebebeb;
+    }
+    to{
+        color: rgb(183, 125, 212);
+    }
+}
+@keyframes linkHoofHoofReversed {
+    from{
+        color: rgb(183, 125, 212);
+    }
+    to{
+        color: #ebebeb;
+    }
+}
+a{
+    animation: linkHoofHoofReversed 0.5s;
+    color: #ebebeb; 
+    text-decoration: none;
+}
+a:hover{
+    animation: linkHoofHoof 0.5s;
+    color: rgb(183, 125, 212);
+    text-decoration: none;
 }
