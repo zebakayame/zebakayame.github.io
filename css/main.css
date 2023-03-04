@@ -119,3 +119,15 @@ a:hover{
     color: rgb(125, 212, 177);
     text-decoration: none;
 }
+
+.question{
+    margin-left: 20%;
+}
+.answer{
+    margin-right: 20%;
+}
+hr{
+    width: 40%;
+    border: #ebebeb 2px solid;
+    border-radius: 4px;
+}
