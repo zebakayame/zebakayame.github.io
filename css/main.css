@@ -89,3 +89,33 @@ a:hover{
     color: rgb(183, 125, 212);
     text-decoration: none;
 }
+@keyframes makeItGreen {
+    from{
+        color: rgb(183, 125, 212);
+        text-decoration: none;
+    }
+    to{
+        color: rgb(125, 212, 177);
+        text-decoration: none;
+    }
+}
+@keyframes makeItGreenReversed {
+    from{
+        color: rgb(125, 212, 177);
+        text-decoration: none;
+    }
+    to{
+        color: rgb(183, 125, 212);
+        text-decoration: none;
+    }
+}
+.specialLink{
+    animation: makeItGreenReversed 0.5s;
+    color: rgb(183, 125, 212);
+    text-decoration: none;
+}
+.specialLink:hover{
+    animation: makeItGreen 0.5s;
+    color: rgb(125, 212, 177);
+    text-decoration: none;
+}
