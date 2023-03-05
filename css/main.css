@@ -5,11 +5,11 @@
 body{
     background-color:#202441;
     margin-top: 150px;
+    min-width: 1000px;
 }
 
 .main{
-    background-color: #202441;
-    
+    background-color: #202441; 
 }
 /* Head class */
 #head{
@@ -17,6 +17,7 @@ body{
     position: absolute;
     left: 0px;
     top: 0px;
+    min-width: 1000px;
     width: 100%;
     display: flex;
 }
@@ -30,6 +31,9 @@ body{
     background-color: #202441;
     margin: 40px 20px 0px 20px;
     padding: 10px 10px 0px 10px;
+}
+.eventBox{
+    background-color: #353853;
 }
 /* Everything that goes with Text */
 h1{
@@ -130,4 +134,25 @@ hr{
     width: 40%;
     border: #ebebeb 2px solid;
     border-radius: 4px;
+}
+
+/*Everything about Box organization*/
+.main{
+    display: block;
+}
+.row{
+    text-align: center;
+    display: block;
+}
+.col{
+    text-align: center;
+    display: flex;
+    width: 60%;
+    padding: 20px 20% 20px 20%;
+}
+.eventBox{
+    border: #353853 10px solid;
+    border-radius: 15px;
+    width: 46%;
+    margin: 1%;
 }
