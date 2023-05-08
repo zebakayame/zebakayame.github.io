@@ -1,3 +1,7 @@
+.p, .t, .o, .f{
+    text-align: left;
+    font-size: large;
+}
 .p{
     color: orange;
     text-decoration: underline;
