@@ -22,3 +22,12 @@ code{
 dl, ol{
     padding: 20px 20% 20px 20%;
 }
+#titre{
+    color: #ac4a4a; 
+    text-decoration: none;
+    border: #57a3c4 outset 10px;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 40px 15%;
+    background-color: #ffecda;
+}
