@@ -221,7 +221,22 @@ button:hover{
     animation: button_GO_GO 0.5s ease;
     background-color: #4a79ac;
 }
-
+@keyframes opacityIncreaser {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.hehe{
+    opacity: 0;
+    color: aqua;
+}
+.hehe:hover{
+    animation: opacityIncreaser 0.5s ease;
+    opacity: 1;
+}
 /*
 width: 120px;
     height: 80px;
