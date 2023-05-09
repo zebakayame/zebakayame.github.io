@@ -215,6 +215,7 @@ button{
     border-radius: 25px;
     border: #57a3c4 dashed 5px;
     background-color: #daecff;
+    color: black;
 }
 button:hover{
     animation: button_GO_GO 0.5s ease;
