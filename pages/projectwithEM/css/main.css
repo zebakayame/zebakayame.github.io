@@ -237,6 +237,11 @@ button:hover{
     animation: opacityIncreaser 0.5s ease;
     opacity: 1;
 }
+.who{
+    width: 40%;
+    margin:  20px 30% 20px 30%;
+    border-radius: 25px;
+}
 /*
 width: 120px;
     height: 80px;
