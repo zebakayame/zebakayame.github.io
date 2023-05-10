@@ -1,0 +1,20 @@
+.p, .t, .o, .f{
+    text-align: left;
+    font-size: large;
+}
+.p{
+    color: orange;
+    text-decoration: underline;
+}
+.t{
+    color: brown;
+    text-decoration: none;
+}
+.o{
+    color: green;
+    text-decoration: double;
+}
+.f{
+    color: aqua;
+    text-decoration: line-through;
+}

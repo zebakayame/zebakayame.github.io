@@ -1,0 +1,253 @@
+@font-face {
+    font-family: customFont;
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+body{
+    background-image: linear-gradient(to bottom,#daecff, #ffecda);
+    min-height: 100vh;
+    background-size: cover;
+    margin-top: 250px;
+    min-width: 1000px;
+    font-family: customFont;
+}
+#head{
+    background-color: #ffecda;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    min-width: 1000px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-bottom: solid 5px #57a3c4;
+}
+#divLOGO{
+    margin: 15px 20px 15px 15px;
+}
+.logo{
+    width: 64px;
+}
+@keyframes El_menu_GO_GO {
+    from{
+        background-color: #daecff;
+    }
+    to{
+        background-color: #4a79ac;
+    }
+}
+@keyframes El_menu_GO_BACK {
+    from{
+        background-color: #4a79ac;
+    }
+    to{
+        background-color: #daecff;
+    }
+}
+.menu{
+    animation: El_menu_GO_BACK 0.5s ease;
+    position: relative;
+    background-color: #daecff;
+    width: 120px;
+    height: 80px;
+    margin: 35px 5% 0px 5%;
+    border: #57a3c4 5px solid;
+    border-radius: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+.menu:hover{
+    background-color: #4a79ac;
+    animation: El_menu_GO_GO 0.5s ease;
+}
+.specialMenu{
+    animation: El_menu_GO_BACK 0.5s ease;
+    position: relative;
+    background-color: #daecff;
+    width: 120px;
+    height: 120px;
+    margin: 35px 5% 0px 5%;
+    border: #57a3c4 5px solid;
+    border-radius: 80px;
+    text-align: center;
+    padding-top: 40px;
+    z-index: 0;
+}
+.specialMenu:hover{
+    background-color: #4a79ac;
+    animation: El_menu_GO_GO 0.5s ease;
+}
+.main{
+    position: relative;
+    z-index: 1;
+}
+@keyframes menuA_GO_GO {
+    from{
+        color: #ac4a4a;
+    }
+    to{
+        color: #d3aae5;
+    }
+}
+@keyframes menuA_GO_GOBack {
+    from{
+        color: #d3aae5;
+    }
+    to{
+        color: #ac4a4a;
+    }
+}
+a{
+    animation: menuA_GO_GOBack 0.5s ease;
+    color: #ac4a4a;
+}
+a:hover{
+    animation: menuA_GO_GO 0.5s ease;
+    color: #d3aae5;
+}
+
+ol{
+    list-style-position: inside;
+}
+.main{
+    display: block;
+}
+.row{
+    text-align: center;
+    display: block;
+}
+.col{
+    text-align: center;
+    display: flex;
+    width: 60%;
+    margin: 20px 20% 20px 20%;
+}
+
+
+.col p{
+    width: 60%;
+    margin: 1%;
+}
+
+
+video{
+    width: 50%;
+    margin: 20px 25% 25px 25%;
+    border-radius: 25px;
+    border: #57a3c4 dashed 5px;
+}
+
+#yIframe{
+    width: 650px;
+    height: 366px;
+    border-radius: 25px;
+    border: #57a3c4 dashed 5px;
+}
+
+hr{
+    border: 5px solid #ac4a4a;
+    border-radius: 5px;
+    margin: 20px 20% 20px 20%;
+}
+/* ANYA */
+@keyframes anya {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.anya{
+    width: 70px;
+    margin-top: 15px;
+    animation-name: anya;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.memeImage{
+    width: 40%;
+    margin:  20px 30% 20px 30%;
+    border-radius: 25px;
+    border: #57a3c4 dashed 5px;
+}
+
+.menulang{
+    animation: El_menu_GO_BACK 0.5s ease;
+    background-color: #daecff;
+    width: 20%;
+    height: 100px;
+    margin: 20px 6.66% 20% 6.66%;
+    border: 7px #57a3c4 outset;
+    padding: 45px 0% 0% 0%;
+    border-radius: 25px;
+}
+.menulang:hover{
+    background-color: #4a79ac;
+    animation: El_menu_GO_GO 0.5s ease;
+}
+
+@keyframes button_GO_GO {
+    from{
+        background-color: #daecff;
+    }
+    to{
+        background-color: #4a79ac;
+    }
+}
+@keyframes button_GO_BACK {
+    from{
+        background-color: #4a79ac;
+    }
+    to{
+        background-color: #daecff;
+    }
+}
+
+button{
+    animation: button_GO_BACK 0.5s ease;
+    font-family: customFont;
+    font-size: large;
+    width: 20%;
+    margin:  20px 40% 20px 40%;
+    padding: 5% 5%;
+    border-radius: 25px;
+    border: #57a3c4 dashed 5px;
+    background-color: #daecff;
+    color: black;
+}
+button:hover{
+    animation: button_GO_GO 0.5s ease;
+    background-color: #4a79ac;
+}
+@keyframes opacityIncreaser {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.hehe{
+    opacity: 0;
+    color: aqua;
+}
+.hehe:hover{
+    animation: opacityIncreaser 0.5s ease;
+    opacity: 1;
+}
+.who{
+    width: 40%;
+    margin:  20px 30% 20px 30%;
+    border-radius: 25px;
+}
+/*
+width: 120px;
+    height: 80px;
+    margin: 20px 5% 20px 5%;
+    border: #57a3c4 5px solid;
+    border-radius: 80px;
+    text-align: center;
+    padding-top: 40px;
+    */

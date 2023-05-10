@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Java</title>
+	<link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/textStyleCss.css">
+	<link rel="icon" href="../../img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+	<div id="head">
+		<div id="divLOGO"><img class="logo" src="../../img/logo.png" alt="logo" title="Meow"></div>
+		<div class="menu"><a href="../../index.html">Accueil</a></div>
+		<div class="menu"><a href="../explication.html">Explications</a></div>
+		<div class="specialMenu"><a href="../types.html">Les Types</a><h3>Java</h3></div>
+		<div class="menu"><a href="../contact.html">Contact</a></div>
+	</div>
+
+	<div class="main">
+
+        <h1 id="titre">Ici nous présentons le langage de programmation Java.</h1>
+
+        <p>Java est un langage de programmation orienté objet qui est créé en 1995 par le designer James Gosling et par l’entreprise Sun Microsystems. Il est constamment mis à jour depuis plus de 27 ans par Oracle et un des langages les plus connus parmi les développeurs. L’un des points positifs de Java aimer par tous est sa portabilité, il est compatible avec presque tous les appareils à l’exception des appareils de chez Apple, sans compter les MacBook qui sont compatibles. De ce fait une application Java requière peu ou quasiment aucune modification pour être importé sur différents appareils qui sont conçus sur différentes architectures ou système d’exploitation. Ceci est grâce à une machine virtuelle Java (JVM) qui peut exécuter tout code Java par les appareils qui le prennent en charge. Ce qui revient donc que si on a envie que des milliers d’application Java soient compatibles avec un appareil spécifique, il suffit donc de développer une seule (le JVM) pour rendre cela possible. Son environnement orienté objet est aussi très facile à manipuler contrairement à certains à ses concurrents tels que le C qui est un langage procédural. </p>
+        <p>Or il a quelque point faible, contrairement à la plupart des langages de programmation, Java est un langage avec une très lente performance, ceci est dû que la machine n’exécute pas le code directement mais doit en même temps exécuter la machine virtuelle Java qui à son tour doit exécuter le script. Bien que la JVM gère automatiquement la mémoire, ceci peut poser des problèmes si elle n’est quand même pas gérée correctement et peut très vite remplir la mémoire de la RAM ce qui pose problème avec les appareils à performance limitée.</p>
+        <p>Partons maintenant sur son aspect, et comment il fonctionne voici un bout de code de Java qui affiche sur un terminal le message « Bonjour les gens »</p>
+
+        <div class="code"><code>
+            public class application{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message() ; // appelle de la fonction message()<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;public static void message(){ // la fonction message<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(“Bonjour les gens”); // code pour imprimer le message<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+            }<br>
+        </code></div>
+
+        <p>Dans ce bout de code, on voit tout d’abord la ligne <code>public class application {</code> Cette classe sert en quelque sorte « stocker » des fonctions à l’intérieur d'elle dont aussi la fonction principale « main » qui peut être aperçue dans la deuxième ligne <code>public static void main(String[] args) {</code> cette fonction sera la première à etre exécuter par le JVM. Tout le code exécuté dépendra principalement de cette classe-ci. Dans la ligne entre les crochets de la classe main, nous voyons la première ligne d’exécution de code, <code>message() ;</code> ce bout de code permet d’appeler la classe nommée message (Attention, à noter que toute ligne de code de Java doit impérativement se terminer avec un <code>:</code> l’exclusion de ceci retournera une erreur au près du JVM) la classe nommée <code>message</code> en question est situé à la ligne 5 du programme. Et elle contient en son interne la ligne de code qui permet d’afficher sur le terminal d’exécution le message <code>Bonjour les gens</code>.</p>
+        <p>Et voilà une petite vidéo avec l'une des plus mauvaises qualité audio du monde car bon... On nous a dit si possible ne pas dépasser les 5 mégaoctets donc voilà:</p>
+        <video src="../../img/video.mp4" controls poster="../../img/anya.png"><p>Mmh, ton naviguateur n'aime pas les videos?</p></video>
+        <p>On est d'accord c'est vachement pourri non? Le lien est ici si vous voulez du <a href="https://www.youtube.com/watch?v=l9AzO1FMgM8">Fabuleux</a></p>
+        <p>Et maintenant si vous voulez une deuxième BONNE vidéo qui vachement pas mal fait du même gars, la voilà <span style="text-decoration: underline;">IMPORTER</span> avec une balise <code>&lt;iframe&gt;</code>:</p>
+        <center> <!-- Bonjour monsieur, nous savons très bien que l'element <center> est totalement obselete et qu'il faut utuliser css à la place-->
+            <!--Mais ça fait bien le job donc pourquoi on devrait ne pas l'utuliser?-->
+            <!--Aussi, oui ce fichier a bien été verifier et nous avons eu cette erreur mais tout de même nous allons probablement continuer a l'utuliser-->
+            <!--Ceci n'est pas un bug c'est une fonctionnalités-->
+            <iframe id="yIframe" width="400" height="225" src="https://www.youtube.com/embed/m4-HM_sCvtQ" title="Java en 100 Seconde mais mieux"></iframe>
+        </center>
+        <p>Aller maintenant ici pour Les languages <a href="fun.html">Explicite</a></p>
+    </div>
+</body>
+</html>
