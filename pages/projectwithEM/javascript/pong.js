@@ -18,7 +18,7 @@ var player1 = {
     y: canvasHeight/2 - playerHeight/2,
     with: playerWidth,
     height: canvasHeight,
-    color: #fff,
+    color: "#1c5dc7",
     dy: 0
 };
 
@@ -27,7 +27,7 @@ var player2 = {
     y: canvasHeight/2 - playerHeight/2,
     with: playerWidth,
     height: canvasHeight,
-    color: #fff,
+    color: "#1c5dc7",
     dy: 0
 };
 
@@ -36,7 +36,7 @@ var ball = {
     y: canvasHeight / 2 - headSize/2,
     with: headSize,
     height: headSize,
-    color: #f3f3f3,
+    color: "#1c5dc7",
     vx: 3,
     vy: 3
 };
