@@ -6,137 +6,34 @@
 	<link rel="stylesheet" href="../css/pong.css">
 </head>
 <body>
-    <canvas width="800px" height="400px" id="pong">A</canvas>
-    <script>
-        alert("Test");
-        const canvasWidth = 800;
-const canvasHeight = 400;
+    <canvas id="pong">A</canvas>
+    <script src="../javascript/pongy.js"></script>
+</body>
+</html>
 
-const playerWidth = 10;
-const playerHeight = 80;
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/textStyleCss.css">
+    <link rel="stylesheet" href="../css/pong.css">
+	<link rel="icon" href="../img/logo.png" type="image/x-icon">
+</head>
+<body>
 
-const headSize = 10;
-
-const playerSpeed = 5;
-
-const canvas = document.getElementById("pong");
-const ctx = canvas.getContext("2d");
-canvas.width = canvasWidth;
-canvas.height = canvasHeight;
-
-var player1 = {
-    x: 0,
-    y: canvasHeight/2 - playerHeight/2,
-    with: playerWidth,
-    height: canvasHeight,
-    color: "#1c5dc7",
-    dy: 0
-};
-
-var player2 = {
-    x: canvasWidth - playerWidth,
-    y: canvasHeight/2 - playerHeight/2,
-    with: playerWidth,
-    height: canvasHeight,
-    color: "#1c5dc7",
-    dy: 0
-};
-
-var ball = {
-    x: canvasWidth / 2 - headSize/2,
-    y: canvasHeight / 2 - headSize/2,
-    with: headSize,
-    height: headSize,
-    color: "#1c5dc7",
-    vx: 3,
-    vy: 3
-};
-
-function draw() {
-    ctx.clearRect(0,0, canvasWidth, canvasHeight);
-
-    ctx.fillStyle = player1.color;
-    ctx.fillRect(player1.x,player1.y,player1.with,player1.height);
-
-    ctx.fillStyle = player2.color;
-    ctx.fillRect(player2.x,player2.y,player.width,player.height);
-
-    ctx.fillStyle = ball.color;
-    ctx.fillStyle(ball.x, ball.y, ball.with, ball.height);
-}
-
-function update(){
-
-    checkKeyPress();
-    updatePlayers();
-    updateBall();
-
-    draw();
-    requestAnimationFrame(update);
-}
-
-function updateBall() {
-    if(ball.y + ball.height >= canvasHeight){
-        ball.vy *= -1;
-    }
-    if(ball.y <= 0){
-        ball.vy *= -1;
-    }
-    // player 1 collision
-    if(ball.x <= player1.x + player1.with && 
-        ball.y + ball.height >= player1.height && 
-        ball.y <= player1.y + player1.height){
-        ball.vx *= -1;
-    }
-    if(ball.x + ball.with <= player2.x && 
-        ball.y + ball.height >= player2.height && 
-        ball.y <= player2.y + player2.height){
-        ball.vx *= -1;
-    }
-
-    if(ball.x <= 0){
-        resetBall();
-    }
-    if(ball.x >= canvasWidth){
-        resetBall();
-    }
-
-    ball.x += ball.dx;
-    ball.y += ball.dy;
-}
-
-function resetBall() {
-    ball.dx = 3;
-    ball.dy = 3;
-    ball.x = canvasWidth / 2 - ball.with/2;
-    ball.y = canvasHeight / 2 - ball.height/2;
-}
-
-// Key listener
-document.addEventListener("keydown", function(event) {
-    if(event.key === "w"){
-        player1.dy = -playerSpeed;
-    }
-    if(event.key === "s"){
-        player1.dy = playerSpeed;
-    }
-    if(event.key === "o"){
-        player2.dy = playerSpeed;
-    }
-    if(event.key === "l"){
-        player2.dy = playerSpeed;
-    }
-});
-document.addEventListener("keyup", function(event){
-    if(event.key === "w" || event.key === "s"){
-        player1.dy = 0;
-    }
-    if(event.key === "o" || event.key === "l"){
-        player2.dy = 0;
-    }
-});
-
-update();
-    </script>
+	<div id="head">
+		<div id="divLOGO"><img class="logo" src="../img/logo.png" alt="logo" title="Meow"></div>
+		<div class="menu"><a href="../index.html">Accueil</a></div>
+		<div class="menu"><a href="explication.html">Explications</a></div>
+		<div class="menu"><a href="types.html">Les Types</a></div>
+		<div class="menu"><a href="contact.html">Contact</a></div>
+	</div>
+	<div class="gameContainer">
+        <canvas id="pong">A</canvas>
+    <script src="../javascript/pongy.js"></script>
+    </div>
 </body>
 </html>

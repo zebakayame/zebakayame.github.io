@@ -54,16 +54,6 @@ function draw() {
     ctx.fillStyle(ball.x, ball.y, ball.with, ball.height);
 }
 
-function update(){
-
-    checkKeyPress();
-    updatePlayers();
-    updateBall();
-
-    draw();
-    requestAnimationFrame(update);
-}
-
 function updateBall() {
     if(ball.y + ball.height >= canvasHeight){
         ball.vy *= -1;
@@ -124,5 +114,12 @@ document.addEventListener("keyup", function(event){
         player2.dy = 0;
     }
 });
+
+function update(){
+
+    updateBall();
+    draw();
+    requestAnimationFrame(update);
+}
 
 update();
