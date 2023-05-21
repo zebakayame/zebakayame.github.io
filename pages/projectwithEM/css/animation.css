@@ -1,0 +1,118 @@
+/* LES MENUS EN HAUT */
+@keyframes El_menu_GO_GO {
+    from{
+        background-color: #daecff;
+    }
+    to{
+        background-color: #4a79ac;
+    }
+}
+@keyframes El_menu_GO_BACK {
+    from{
+        background-color: #4a79ac;
+    }
+    to{
+        background-color: #daecff;
+    }
+}
+.menu{
+    animation: EL_menu_GO_BACK 0.5s ease;
+}
+.menu:hover{
+    background-color: #4a79ac;
+    animation: El_menu_GO_GO 0.5s ease;
+}
+.specialMenu{
+    animation: El_menu_GO_BACK 0.5s ease;
+}
+.specialMenu:hover{
+    background-color: #4a79ac;
+    animation: El_menu_GO_GO 0.5s ease;
+}
+.menulang{
+    animation: El_menu_GO_BACK 0.5s ease;
+}
+.menulang:hover{
+    background-color: #4a79ac;
+    animation: El_menu_GO_GO 0.5s ease;
+}
+
+/* pour les liens*/
+@keyframes menuA_GO_GO {
+    from{
+        color: #ac4a4a;
+    }
+    to{
+        color: #d3aae5;
+    }
+}
+@keyframes menuA_GO_GOBack {
+    from{
+        color: #d3aae5;
+    }
+    to{
+        color: #ac4a4a;
+    }
+}
+a{
+    animation: menuA_GO_GOBack 0.5s ease;
+}
+a:hover{
+    animation: menuA_GO_GO 0.5s ease;
+    color: #d3aae5;
+}
+
+/* ANYA */
+@keyframes anya {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+.anya{
+    animation-name: anya;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Secret BUTTON */
+@keyframes button_GO_GO {
+    from{
+        background-color: #daecff;
+    }
+    to{
+        background-color: #4a79ac;
+    }
+}
+@keyframes button_GO_BACK {
+    from{
+        background-color: #4a79ac;
+    }
+    to{
+        background-color: #daecff;
+    }
+}
+button{
+    animation: button_GO_BACK 0.5s ease;
+}
+button:hover{
+    animation: button_GO_GO 0.5s ease;
+    background-color: #4a79ac;
+}
+
+/* the secret */
+@keyframes opacityIncreaser {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.hehe:hover{
+    animation: opacityIncreaser 0.5s ease;
+    opacity: 1;
+}

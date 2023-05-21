@@ -1,12 +1,14 @@
-h1, h2, h3, h6{
+@font-face {
+    font-family: customFont;
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+body, button, .specialMenu, .menu, .row, .col{
+    font-family: customFont;
+    color: black;
     text-align: center;
 }
 h1{
     text-decoration: underline 5px;
-}
-p{
-    text-align: center;
-
 }
 
 .code{
@@ -21,6 +23,8 @@ code{
 }
 dl, ol{
     padding: 20px 20% 20px 20%;
+    text-align: left;
+    list-style-position: inside;
 }
 #titre{
     color: #ac4a4a; 
@@ -30,4 +34,10 @@ dl, ol{
     border-radius: 30px;
     margin: 40px 15%;
     background-color: #ffecda;
+}
+a{
+    color: #ac4a4a;
+}
+button{
+    font-size: large
 }
