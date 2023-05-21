@@ -51,6 +51,8 @@ var ball = {
     vy: 1
 };
 
+
+
 function draw() {
     // draw player 1
     context.fillStyle = player1.color;
