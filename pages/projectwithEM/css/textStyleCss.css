@@ -1,7 +1,10 @@
+/* Da used font */
 @font-face {
     font-family: customFont;
     src: url(../fonts/Righteous-Regular.ttf);
 }
+
+/* General rules */
 body, button, .specialMenu, .menu, .row, .col{
     font-family: customFont;
     color: black;
@@ -10,7 +13,6 @@ body, button, .specialMenu, .menu, .row, .col{
 h1{
     text-decoration: underline 5px;
 }
-
 .code{
     background-color: rgb(150, 189, 243);
     margin: 20px 20% 20px 20%;

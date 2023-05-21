@@ -16,12 +16,7 @@ body{
     display: flex;
     border-bottom: solid 5px #57a3c4;
 }
-#divLOGO{
-    margin: 15px 20px 15px 15px;
-}
-.logo{
-    width: 64px;
-}
+/* TOP HEAD MENU */
 .menu{
     position: relative;
     background-color: #daecff;
@@ -43,6 +38,8 @@ body{
     padding-top: 40px;
     z-index: 0;
 }
+
+/* EL bodyy */
 .main{
     display: block;
 }
@@ -58,40 +55,6 @@ body{
     width: 60%;
     margin: 1%;
 }
-
-
-video{
-    width: 50%;
-    margin: 20px 25% 25px 25%;
-    border-radius: 25px;
-    border: #57a3c4 dashed 5px;
-}
-
-#yIframe{
-    width: 650px;
-    height: 366px;
-    border-radius: 25px;
-    border: #57a3c4 dashed 5px;
-}
-
-hr{
-    border: 5px solid #ac4a4a;
-    border-radius: 5px;
-    margin: 20px 20% 20px 20%;
-}
-/* ANYA */
-.anya{
-    width: 70px;
-    margin-top: 15px;
-}
-
-.memeImage{
-    width: 40%;
-    margin:  20px 30% 20px 30%;
-    border-radius: 25px;
-    border: #57a3c4 dashed 5px;
-}
-
 .menulang{
     background-color: #daecff;
     width: 20%;
@@ -101,7 +64,6 @@ hr{
     padding: 45px 0% 0% 0%;
     border-radius: 25px;
 }
-
 button{
     width: 20%;
     margin:  20px 40% 20px 40%;
@@ -110,6 +72,22 @@ button{
     border: #57a3c4 dashed 5px;
     background-color: #daecff;
 }
+
+/* Decoration */
+hr{
+    border: 5px solid #ac4a4a;
+    border-radius: 5px;
+    margin: 20px 20% 20px 20%;
+}
+
+/* ANYA */
+.anya{
+    width: 70px;
+    margin-top: 15px;
+}
+
+
+/* SECRET */
 .hehe{
     opacity: 0;
     color: aqua;
@@ -118,4 +96,30 @@ button{
     width: 40%;
     margin: 20px 30% 20px 30%;
     border-radius: 25px;
+}
+
+/* IMAGES */
+#divLOGO{
+    margin: 15px 20px 15px 15px;
+}
+.logo{
+    width: 64px;
+}
+video{
+    width: 50%;
+    margin: 20px 25% 25px 25%;
+    border-radius: 25px;
+    border: #57a3c4 dashed 5px;
+}
+#yIframe{
+    width: 650px;
+    height: 366px;
+    border-radius: 25px;
+    border: #57a3c4 dashed 5px;
+}
+.memeImage{
+    width: 40%;
+    margin:  20px 30% 20px 30%;
+    border-radius: 25px;
+    border: #57a3c4 dashed 5px;
 }
