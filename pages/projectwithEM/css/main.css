@@ -1,12 +1,10 @@
 body{
-    background-image: linear-gradient(to bottom,#daecff, #ffecda);
     min-height: 100vh;
     background-size: cover;
     margin-top: 250px;
     min-width: 1000px;
 }
 #head{
-    background-color: #ffecda;
     position: absolute;
     left: 0px;
     top: 0px;
@@ -14,26 +12,24 @@ body{
     width: 100%;
     height: 100px;
     display: flex;
-    border-bottom: solid 5px #57a3c4;
+    border-bottom: solid 5px;
 }
 /* TOP HEAD MENU */
 .menu{
     position: relative;
-    background-color: #daecff;
     width: 120px;
     height: 80px;
     margin: 35px 5% 0px 5%;
-    border: #57a3c4 5px solid;
+    border: 5px solid;
     border-radius: 80px;
     padding-top: 40px;
 }
 .specialMenu{
     position: relative;
-    background-color: #daecff;
     width: 120px;
     height: 120px;
     margin: 35px 5% 0px 5%;
-    border: #57a3c4 5px solid;
+    border: 5px solid;
     border-radius: 80px;
     padding-top: 40px;
     z-index: 0;
@@ -42,6 +38,12 @@ body{
 /* EL bodyy */
 .main{
     display: block;
+}
+#titre{
+    border: outset 10px;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 40px 15%;
 }
 .row{
     display: block;
@@ -55,12 +57,20 @@ body{
     width: 60%;
     margin: 1%;
 }
+.code{
+    margin: 20px 20% 20px 20%;
+    border: solid 5px;
+    border-radius: 25px;
+    padding: 20px;
+}
+dl, ol{
+    padding: 20px 20% 20px 20%;
+}
 .menulang{
-    background-color: #daecff;
     width: 20%;
     height: 100px;
     margin: 20px 6.66% 20% 6.66%;
-    border: 7px #57a3c4 outset;
+    border: 7px outset;
     padding: 45px 0% 0% 0%;
     border-radius: 25px;
 }
@@ -69,13 +79,12 @@ button{
     margin:  20px 40% 20px 40%;
     padding: 5% 5%;
     border-radius: 25px;
-    border: #57a3c4 dashed 5px;
-    background-color: #daecff;
+    border: dashed 5px;
 }
 
 /* Decoration */
 hr{
-    border: 5px solid #ac4a4a;
+    border: 5px solid;
     border-radius: 5px;
     margin: 20px 20% 20px 20%;
 }
@@ -88,10 +97,6 @@ hr{
 
 
 /* SECRET */
-.hehe{
-    opacity: 0;
-    color: aqua;
-}
 .who{
     width: 40%;
     margin: 20px 30% 20px 30%;
@@ -109,17 +114,17 @@ video{
     width: 50%;
     margin: 20px 25% 25px 25%;
     border-radius: 25px;
-    border: #57a3c4 dashed 5px;
+    border: dashed 5px;
 }
 #yIframe{
     width: 650px;
     height: 366px;
     border-radius: 25px;
-    border: #57a3c4 dashed 5px;
+    border: dashed 5px;
 }
 .memeImage{
     width: 40%;
-    margin:  20px 30% 20px 30%;
+    margin: 20px 30% 20px 30%;
     border-radius: 25px;
-    border: #57a3c4 dashed 5px;
+    border: dashed 5px;
 }

@@ -7,38 +7,18 @@
 /* General rules */
 body, button, .specialMenu, .menu, .row, .col{
     font-family: customFont;
-    color: black;
+    
     text-align: center;
 }
 h1{
     text-decoration: underline 5px;
 }
-.code{
-    background-color: rgb(150, 189, 243);
-    margin: 20px 20% 20px 20%;
-    border: solid 5px black;
-    border-radius: 25px;
-    padding: 20px;
-}
-code{
-    background-color: rgb(150, 189, 243);
-}
 dl, ol{
-    padding: 20px 20% 20px 20%;
     text-align: left;
     list-style-position: inside;
 }
 #titre{
-    color: #ac4a4a; 
     text-decoration: none;
-    border: #57a3c4 outset 10px;
-    padding: 20px;
-    border-radius: 30px;
-    margin: 40px 15%;
-    background-color: #ffecda;
-}
-a{
-    color: #ac4a4a;
 }
 button{
     font-size: large
