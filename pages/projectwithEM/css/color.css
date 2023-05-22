@@ -9,16 +9,6 @@
     --text-color: black;
 }
 
-.darkMode{
-    --primary-color: #353853;
-    --secondary-color: #202441;
-    --accent-color: #7d8dff;
-    --accent-color2: #7cd3b6;
-    --accent-color3: #b77dd4;
-    --accent-color4: rgb(150, 189, 243);
-    --text-color: #ebebeb;
-}
-
 body{
     background-image: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
     color: var(--text-color);
