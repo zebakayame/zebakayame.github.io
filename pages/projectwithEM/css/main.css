@@ -135,3 +135,13 @@ video{
     border-radius: 25px;
     border: dashed 5px;
 }
+
+/* CONTACT */
+.contAva{
+    width: 64px;
+    image-rendering: pixelated;
+}
+.lienExt{
+    width: 48px;
+    image-rendering: pixelated;
+}
