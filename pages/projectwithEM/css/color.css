@@ -5,6 +5,7 @@
     --accent-color2: #ac4a4a;
     --accent-color3: #d3aae5;
     --accent-color4: rgb(150, 189, 243);
+    --accent-color5: #a073b4;
     --text-color: black;
 }
 
@@ -51,4 +52,15 @@ hr{
 }
 a{
     color: var(--accent-color2);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--accent-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--accent-color3);
+    opacity: 0.5;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--accent-color5);
 }
