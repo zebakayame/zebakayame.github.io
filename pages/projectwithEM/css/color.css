@@ -78,7 +78,7 @@ a{
     }
 }
 .menu{
-    animation: EL_menu_GO_BACK 0.5s ease;
+    animation: El_menu_GO_BACK 2s ease;
 }
 .menu:hover{
     background-color: var(--accent-color);
