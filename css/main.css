@@ -57,6 +57,9 @@ h6{
 p{
     font-size: 22px;
 }
+li{
+    font-size: 22px;
+}
 .pokeMenu{
     color: #ebebeb;
     font-family: bitMapFont;
@@ -155,4 +158,11 @@ hr{
     border-radius: 15px;
     width: 46%;
     margin: 1%;
+}
+.centerer{
+    text-align: center;
+}
+ul{
+    display: inline-block;
+    text-align: left;
 }
