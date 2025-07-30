@@ -1,40 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>UwU</title>
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="icon" href="img/catLogo.png" type="image/x-icon"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting down love</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(22, 168, 34);
+        }
+        div{
+            font-size: 10vh;
+            font-family: 'Courier New', monospace;
+            margin: 5%;
+        }
+    </style>
 </head>
 <body>
-	
-	<div id="head">
-		<div id="logoContainer"><img class="logo" src="img/catLogo.png" alt="catLogo" title="Meow"></div>
-		<div class="pokeMenu"><a href="index.html">Home</a></div>
-		<div class="pokeMenu"><a href="pages/games.html">Games</a></div>
-		<div class="pokeMenu"><a href="pages/coding.html">Coding</a></div>
-		<div class="pokeMenu"><a href="pages/hobby.html">Hobby</a></div>
-		<div class="pokeMenu"><a href="pages/ressources.html">Ressources</a></div>
-		<div class="pokeMenu"><a href="pages/contact.html">Contact</a></div>
-	</div>
-	<div class="main">
-		<div class="row">
-			<h1>Welcome to Kuku's playground</h1>
-			<h5>You can view here the latest in stage developement, update, realease and so on from me</h5>
-			<p>Good day browsing the website</p>
-			<p>UwU</p>
-		</div>
-		<div class="row">
-			<div class="col">
-				<div class="eventBox">
-					<h4>Neko Adventure</h4>
-					<h6>Status: In developement</h6>
-					<a href="pages/games/nekoAdventure.html">View page</a>
-				</div>
-			</div>
-		</div>
-	</div>
+    <img src="cloverC1.png" alt="4Clover" width="20%">
+    <div id="countdown"></div>
 
+<script>
+  const targetDate = new Date("2025-08-08T00:00:00+02:00");
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+    if (diff <= 0) {
+      document.getElementById("countdown").innerText = "💥 it's time.";
+      return;
+    }
+    const hrs = String(Math.floor(diff / 1000 / 60 / 60)).padStart(2, '0');
+    const min = String(Math.floor((diff / 1000 / 60) % 60)).padStart(2, '0');
+    const sec = String(Math.floor((diff / 1000) % 60)).padStart(2, '0');
+    document.getElementById("countdown").innerText = `${hrs}:${min}:${sec}`;
+  }
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
 </body>
 </html>
